@@ -1,0 +1,28 @@
+{
+  "name": "env-cmd-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "env-cmd -f ./config/test.env jest",
+    "start": "node server.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon server.js",
+    "prod": "env-cmd -f ./config/prod.env node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanKr/env-cmd-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanKr/env-cmd-playground/issues"
+  },
+  "homepage": "https://github.com/NathanKr/env-cmd-playground#readme",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4"
+  }
+}
